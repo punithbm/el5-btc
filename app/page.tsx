@@ -9,9 +9,9 @@ export default function Page() {
 
   return (
     <main className="mx-auto flex min-h-screen max-w-md flex-col items-center px-3 pt-6 pb-8">
-      <div className="text-center">
+      {/* <div className="text-center">
         <h1 className="text-2xl font-bold text-gray-900">EL5 Bitcoin</h1>
-      </div>
+      </div> */}
 
       <div className="w-full flex-1 flex items-center justify-center px-2">
         <SwipeDeck cards={cards} height={600} />
