@@ -63,6 +63,15 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
+  /* Prevent pull-to-refresh and overscroll bounce on mobile */
+  overscroll-behavior: none;
+  /* Prevent touch callouts and text selection on mobile */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .container-mobile {

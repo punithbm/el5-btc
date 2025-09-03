@@ -2,18 +2,18 @@ import SwipeDeck from "@/components/SwipeDeck";
 
 export default function Page() {
   const cards = Array.from({ length: 10 }).map((_, i) => ({
-    id: i + 1,
+    id: i,
     src: `/cards/card${i}.png`,
     title: `Card ${i}`,
   }));
 
   return (
-    <main className="mx-auto flex min-h-[calc(100dvh-80px)] max-w-md flex-col items-center px-0 pt-4 pb-12">
-      <div className="text-center mb-4">
+    <main className="mx-auto flex min-h-screen max-w-md flex-col items-center px-3 pt-6 pb-8">
+      <div className="text-center">
         <h1 className="text-2xl font-bold text-gray-900">EL5 Bitcoin</h1>
       </div>
 
-      <div className="w-full flex-1 flex items-center justify-center">
+      <div className="w-full flex-1 flex items-center justify-center px-2">
         <SwipeDeck cards={cards} height={600} />
       </div>
 
