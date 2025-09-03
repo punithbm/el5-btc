@@ -2,9 +2,9 @@ import SwipeDeck from "@/components/SwipeDeck";
 
 export default function Page() {
   const cards = Array.from({ length: 10 }).map((_, i) => ({
-    id: i,
-    src: `/cards/card${i}.png`,
-    title: `Card ${i}`,
+    id: i + 1,
+    src: `/cards/card${i + 1}.png`,
+    title: `Card ${i + 1}`,
   }));
 
   return (
